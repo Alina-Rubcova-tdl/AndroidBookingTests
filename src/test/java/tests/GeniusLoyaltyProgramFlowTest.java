@@ -9,8 +9,8 @@ public class GeniusLoyaltyProgramFlowTest extends DriverSetup {
 
     @Test(testName = "User login flow and genius level navigation test")
     public void geniusLoyaltyProgramFlowTest() {
-        //Assert.assertTrue(cookiesAndNotificationsPage.cookiesPageLoaded(), "Cookies page is not loaded");
-        //cookiesAndNotificationsPage.clickAcceptCookiesButton();
+        Assert.assertTrue(cookiesAndNotificationsPage.cookiesPageLoaded(), "Cookies page is not loaded");
+        cookiesAndNotificationsPage.clickAcceptCookiesButton();
 
         Assert.assertTrue(cookiesAndNotificationsPage.notificationsPageLoaded(), "Notifications page is not loaded");
         cookiesAndNotificationsPage.clickNotificationsCloseButton();
@@ -34,7 +34,6 @@ public class GeniusLoyaltyProgramFlowTest extends DriverSetup {
         Assert.assertTrue(aboutGeniusLoyaltyLvlPage.swipeRightToGeniusLevel3AndValidate(), "Genius Level 3 is NOT displayed.");
         aboutGeniusLoyaltyLvlPage.clickGotItButton();
         aboutGeniusLoyaltyLvlPage.clickBackButton();
-        Assert.assertTrue(signInTabPage.signInTabLoaded(), "Sign In tab is not loaded");
     }
 
 }

@@ -5,11 +5,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+@Listeners({ITestListenerUtility.class})
 public class DriverSetup extends ConfigReader {
 
     public static AndroidDriver driver;
