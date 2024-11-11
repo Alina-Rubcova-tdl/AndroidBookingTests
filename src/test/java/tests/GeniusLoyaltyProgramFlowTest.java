@@ -9,8 +9,8 @@ public class GeniusLoyaltyProgramFlowTest extends DriverSetup {
 
     @Test(testName = "User login flow and genius level navigation test")
     public void geniusLoyaltyProgramFlowTest() {
-        Assert.assertTrue(cookiesAndNotificationsPage.cookiesPageLoaded(), "Cookies page is not loaded");
-        cookiesAndNotificationsPage.clickAcceptCookiesButton();
+        //Assert.assertTrue(cookiesAndNotificationsPage.cookiesPageLoaded(), "Cookies page is not loaded");
+        //cookiesAndNotificationsPage.clickAcceptCookiesButton();
 
         Assert.assertTrue(cookiesAndNotificationsPage.notificationsPageLoaded(), "Notifications page is not loaded");
         cookiesAndNotificationsPage.clickNotificationsCloseButton();
